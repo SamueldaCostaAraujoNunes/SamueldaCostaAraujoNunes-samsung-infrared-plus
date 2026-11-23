@@ -1,0 +1,223 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This device has already been configured with this transmitter.",
+      "no_emitters": "No infrared transmitter entities found. Please set up an infrared device first.",
+      "reconfigure_successful": "Reconfiguration was successful."
+    },
+    "step": {
+      "user": {
+        "title": "Set up Samsung Infrared Plus",
+        "description": "Select the type of Samsung device to control.",
+        "data": {
+          "device_type": "Device type"
+        },
+        "data_description": {
+          "device_type": "The type of device to control."
+        }
+      },
+      "tv": {
+        "title": "Set up Samsung TV",
+        "description": "Select the infrared transmitter pointed at the TV.",
+        "data": {
+          "infrared_emitter_entity_id": "Infrared transmitter"
+        },
+        "data_description": {
+          "infrared_emitter_entity_id": "The infrared transmitter used to send commands."
+        }
+      },
+      "ac": {
+        "title": "Set up Samsung air conditioner",
+        "description": "Select the infrared transmitter and, optionally, a receiver that hears the physical remote.",
+        "data": {
+          "infrared_emitter_entity_id": "Infrared transmitter",
+          "infrared_receiver_entity_id": "Infrared receiver"
+        },
+        "data_description": {
+          "infrared_emitter_entity_id": "The infrared transmitter used to send commands.",
+          "infrared_receiver_entity_id": "Optional. Lets the climate entity follow the changes made with the physical remote."
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure infrared remote",
+        "description": "Change the infrared entities used by this device.",
+        "data": {
+          "infrared_emitter_entity_id": "Infrared transmitter",
+          "infrared_receiver_entity_id": "Infrared receiver"
+        },
+        "data_description": {
+          "infrared_emitter_entity_id": "The infrared transmitter used to send commands.",
+          "infrared_receiver_entity_id": "Optional. Lets the climate entity follow the changes made with the physical remote."
+        }
+      }
+    }
+  },
+  "entity": {
+    "button": {
+      "ad_subtitle": {
+        "name": "AD/Subtitle"
+      },
+      "blue": {
+        "name": "Blue"
+      },
+      "browser": {
+        "name": "Browser"
+      },
+      "down": {
+        "name": "Down"
+      },
+      "e_manual": {
+        "name": "E-Manual"
+      },
+      "exit": {
+        "name": "Exit"
+      },
+      "fast_forward": {
+        "name": "Fast forward"
+      },
+      "green": {
+        "name": "Green"
+      },
+      "home": {
+        "name": "Home"
+      },
+      "info": {
+        "name": "Info"
+      },
+      "left": {
+        "name": "Left"
+      },
+      "num_0": {
+        "name": "0"
+      },
+      "num_1": {
+        "name": "1"
+      },
+      "num_2": {
+        "name": "2"
+      },
+      "num_3": {
+        "name": "3"
+      },
+      "num_4": {
+        "name": "4"
+      },
+      "num_5": {
+        "name": "5"
+      },
+      "num_6": {
+        "name": "6"
+      },
+      "num_7": {
+        "name": "7"
+      },
+      "num_8": {
+        "name": "8"
+      },
+      "num_9": {
+        "name": "9"
+      },
+      "ok": {
+        "name": "OK"
+      },
+      "power": {
+        "name": "Power"
+      },
+      "previous_channel": {
+        "name": "Previous channel"
+      },
+      "record": {
+        "name": "Record"
+      },
+      "red": {
+        "name": "Red"
+      },
+      "return": {
+        "name": "Return"
+      },
+      "rewind": {
+        "name": "Rewind"
+      },
+      "right": {
+        "name": "Right"
+      },
+      "settings": {
+        "name": "Settings"
+      },
+      "source": {
+        "name": "Source"
+      },
+      "tools": {
+        "name": "Tools"
+      },
+      "up": {
+        "name": "Up"
+      },
+      "yellow": {
+        "name": "Yellow"
+      }
+    },
+    "climate": {
+      "samsung_ac": {
+        "state_attributes": {
+          "fan_mode": {
+            "state": {
+              "auto": "Auto",
+              "low": "Low",
+              "medium": "Medium",
+              "high": "High",
+              "turbo": "Turbo"
+            }
+          },
+          "preset_mode": {
+            "state": {
+              "none": "None",
+              "boost": "Fast",
+              "windfree": "WindFree"
+            }
+          },
+          "swing_mode": {
+            "state": {
+              "off": "Off",
+              "on": "On"
+            }
+          },
+          "swing_horizontal_mode": {
+            "state": {
+              "off": "Off",
+              "on": "On"
+            }
+          }
+        }
+      }
+    },
+    "media_player": {
+      "samsung_ir_tv": {
+        "state_attributes": {
+          "source": {
+            "state": {
+              "hdmi_1": "HDMI 1",
+              "hdmi_2": "HDMI 2",
+              "hdmi_3": "HDMI 3",
+              "hdmi_4": "HDMI 4",
+              "tv": "TV"
+            }
+          }
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_source": {
+      "message": "Cannot select input source {invalid_source} for media player. Valid sources: {valid_sources}."
+    }
+  },
+  "selector": {
+    "device_type": {
+      "options": {
+        "ac": "Air conditioner",
+        "tv": "TV"
+      }
+    }
+  }
+}

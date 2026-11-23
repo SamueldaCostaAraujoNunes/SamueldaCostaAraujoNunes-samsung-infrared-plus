@@ -1,0 +1,223 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Este aparelho já está configurado com este transmissor.",
+      "no_emitters": "Nenhum transmissor infravermelho encontrado. Configure um dispositivo infravermelho primeiro.",
+      "reconfigure_successful": "Reconfiguração concluída."
+    },
+    "step": {
+      "user": {
+        "title": "Configurar Samsung Infrared Plus",
+        "description": "Escolha o tipo de aparelho Samsung a controlar.",
+        "data": {
+          "device_type": "Tipo de aparelho"
+        },
+        "data_description": {
+          "device_type": "O tipo de aparelho a controlar."
+        }
+      },
+      "tv": {
+        "title": "Configurar TV Samsung",
+        "description": "Escolha o transmissor infravermelho apontado para a TV.",
+        "data": {
+          "infrared_emitter_entity_id": "Transmissor infravermelho"
+        },
+        "data_description": {
+          "infrared_emitter_entity_id": "O transmissor infravermelho usado para enviar os comandos."
+        }
+      },
+      "ac": {
+        "title": "Configurar ar-condicionado Samsung",
+        "description": "Escolha o transmissor infravermelho e, se quiser, um receptor que escute o controle original.",
+        "data": {
+          "infrared_emitter_entity_id": "Transmissor infravermelho",
+          "infrared_receiver_entity_id": "Receptor infravermelho"
+        },
+        "data_description": {
+          "infrared_emitter_entity_id": "O transmissor infravermelho usado para enviar os comandos.",
+          "infrared_receiver_entity_id": "Opcional. Faz a entidade de clima acompanhar as mudanças feitas pelo controle original."
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigurar controle infravermelho",
+        "description": "Altere as entidades infravermelhas usadas por este aparelho.",
+        "data": {
+          "infrared_emitter_entity_id": "Transmissor infravermelho",
+          "infrared_receiver_entity_id": "Receptor infravermelho"
+        },
+        "data_description": {
+          "infrared_emitter_entity_id": "O transmissor infravermelho usado para enviar os comandos.",
+          "infrared_receiver_entity_id": "Opcional. Faz a entidade de clima acompanhar as mudanças feitas pelo controle original."
+        }
+      }
+    }
+  },
+  "entity": {
+    "button": {
+      "ad_subtitle": {
+        "name": "Audiodescrição/Legenda"
+      },
+      "blue": {
+        "name": "Azul"
+      },
+      "browser": {
+        "name": "Navegador"
+      },
+      "down": {
+        "name": "Para baixo"
+      },
+      "e_manual": {
+        "name": "E-Manual"
+      },
+      "exit": {
+        "name": "Sair"
+      },
+      "fast_forward": {
+        "name": "Avançar"
+      },
+      "green": {
+        "name": "Verde"
+      },
+      "home": {
+        "name": "Início"
+      },
+      "info": {
+        "name": "Info"
+      },
+      "left": {
+        "name": "Esquerda"
+      },
+      "num_0": {
+        "name": "0"
+      },
+      "num_1": {
+        "name": "1"
+      },
+      "num_2": {
+        "name": "2"
+      },
+      "num_3": {
+        "name": "3"
+      },
+      "num_4": {
+        "name": "4"
+      },
+      "num_5": {
+        "name": "5"
+      },
+      "num_6": {
+        "name": "6"
+      },
+      "num_7": {
+        "name": "7"
+      },
+      "num_8": {
+        "name": "8"
+      },
+      "num_9": {
+        "name": "9"
+      },
+      "ok": {
+        "name": "OK"
+      },
+      "power": {
+        "name": "Liga/desliga"
+      },
+      "previous_channel": {
+        "name": "Canal anterior"
+      },
+      "record": {
+        "name": "Gravar"
+      },
+      "red": {
+        "name": "Vermelho"
+      },
+      "return": {
+        "name": "Voltar"
+      },
+      "rewind": {
+        "name": "Retroceder"
+      },
+      "right": {
+        "name": "Direita"
+      },
+      "settings": {
+        "name": "Configurações"
+      },
+      "source": {
+        "name": "Fonte"
+      },
+      "tools": {
+        "name": "Ferramentas"
+      },
+      "up": {
+        "name": "Para cima"
+      },
+      "yellow": {
+        "name": "Amarelo"
+      }
+    },
+    "climate": {
+      "samsung_ac": {
+        "state_attributes": {
+          "fan_mode": {
+            "state": {
+              "auto": "Automático",
+              "low": "Baixo",
+              "medium": "Médio",
+              "high": "Alto",
+              "turbo": "Turbo"
+            }
+          },
+          "preset_mode": {
+            "state": {
+              "none": "Nenhum",
+              "boost": "Fast",
+              "windfree": "WindFree"
+            }
+          },
+          "swing_mode": {
+            "state": {
+              "off": "Desligado",
+              "on": "Ligado"
+            }
+          },
+          "swing_horizontal_mode": {
+            "state": {
+              "off": "Desligado",
+              "on": "Ligado"
+            }
+          }
+        }
+      }
+    },
+    "media_player": {
+      "samsung_ir_tv": {
+        "state_attributes": {
+          "source": {
+            "state": {
+              "hdmi_1": "HDMI 1",
+              "hdmi_2": "HDMI 2",
+              "hdmi_3": "HDMI 3",
+              "hdmi_4": "HDMI 4",
+              "tv": "TV"
+            }
+          }
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_source": {
+      "message": "Não é possível selecionar a fonte {invalid_source}. Fontes válidas: {valid_sources}."
+    }
+  },
+  "selector": {
+    "device_type": {
+      "options": {
+        "ac": "Ar-condicionado",
+        "tv": "TV"
+      }
+    }
+  }
+}

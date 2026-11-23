@@ -1,0 +1,10 @@
+Samsung Infrared Plus
+Copyright 2026 Samuel da Costa Araujo Nunes
+
+This product includes code from Home Assistant (https://github.com/home-assistant/core),
+the "samsung_infrared" integration, licensed under the Apache License 2.0.
+Copyright Home Assistant contributors.
+
+The Samsung AC protocol layout is cross-checked against infrared-protocols
+(https://github.com/home-assistant-libs/infrared-protocols) and IRremoteESP8266
+(https://github.com/crankyoldgit/IRremoteESP8266).
